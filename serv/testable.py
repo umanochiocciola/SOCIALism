@@ -1,3 +1,6 @@
+'''
+Admin script to remove existing posts
+'''
 import pickle as pk
 
 def carica():
@@ -14,5 +17,5 @@ banca = {}
 carica()
 
 while 1:
-    try: banca.pop(input('titolo post da rimuovere: '))
+    try: banca.pop(input('Title of the post to remove: '))
     except: print('non c\'è.')
