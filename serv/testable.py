@@ -18,6 +18,6 @@ carica()
 
 while 1:
     try: banca.pop(input('Title of the post to remove: '))
-    except: print('non c\'è.')
+    except: print('No post named like that')
 
 salva()
