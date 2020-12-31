@@ -15,9 +15,11 @@ def salva():
 
 banca = {}
 carica()
-
+print('type stop to save & close')
 while 1:
-    try: banca.pop(input('Title of the post to remove: '))
+    dude = input('Title of the post to remove: ')
+    if dude == 'stop': break
+    try: banca.pop(dude)
     except: print('No post named like that')
 
 salva()
